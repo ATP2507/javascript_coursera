@@ -51,3 +51,21 @@ console.log("User Category:", userCategory);
 let isAuthenticated = true;
 let authenticationStatus= isAuthenticated? "Authenticated": "Not authenticated";
 console.log("Authentication status:", authenticationStatus);
+
+let employeeStatus= "Subscriber";
+let authStat;
+
+switch(employeeStatus){
+    case "Employee":
+        authStat="Dietary service access"
+        break;
+    case "Enrolled Member":
+        authStat="Dietary service and one on one access";
+        break;
+    case "Subscriber":
+        authStat="Partial dietary service access";
+        break;
+    default:
+        authStat="Enroll or subscribe to avail facilities";
+}
+console.log("Access Status::", authStat);
