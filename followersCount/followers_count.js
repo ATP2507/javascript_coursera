@@ -8,6 +8,10 @@ function displayCount(){
     document.getElementById('countDisplay').innerHTML=count;
 
 }
+function resetCount(){
+    count=0;
+    displayCount();
+}
 
 function checkCountValue(){
     if(count===10){
